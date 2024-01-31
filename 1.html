@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Loading Simulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #video-container {
+            width: 100%;
+            text-align: center;
+        }
+
+        #video-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #loading-info {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #loading-percent {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        #video-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+
+        @media (min-width: 600px) {
+            body {
+                flex-direction: row;
+            }
+
+            #video-container {
+                flex: 1;
+            }
+
+            #loading-info {
+                margin: 0 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="video-container">
+        <img id="video-image" src="./loading.jpg" alt="Video Placeholder">
+    </div>
+    <div id="loading-info">
+        <div id="loading-percent">50%</div>
+        <div>Video Title</div>
+    </div>
+    <button id="video-button">Play Video</button>
+</body>
+</html>

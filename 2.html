@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стаття та Бокове Меню</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        #article {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+            margin-bottom: 20px;
+        }
+
+        #sidebar {
+            width: 100%;
+            max-width: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #e0e0e0;
+        }
+
+        @media (min-width: 600px) {
+            body {
+                flex-direction: row;
+            }
+
+            #main-container {
+                flex-direction: row;
+            }
+
+            #article {
+                width: 60%;
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
+
+            #sidebar {
+                width: 40%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <div id="article">
+            <h1>Заголовок Статті</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod vel justo ut bibendum. Integer laoreet diam nec nunc elementum, vel tincidunt odio tincidunt. Mauris nec scelerisque quam, nec rhoncus tellus. Duis gravida purus nec turpis efficitur, a fermentum nulla imperdiet. Nulla facilisi. Sed vel nulla at ligula elementum tincidunt. Etiam tristique velit non justo hendrerit, nec tincidunt elit efficitur.</p>
+        </div>
+        <div id="sidebar">
+            <h2>Бічне Меню</h2>
+            <ul>
+                <li>Розділ 1</li>
+                <li>Розділ 2</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
